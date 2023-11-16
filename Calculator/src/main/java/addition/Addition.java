@@ -22,8 +22,6 @@ public class Addition extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int num1 = Integer.parseInt(request.getParameter("num1"));
         int num2 = Integer.parseInt(request.getParameter("num2"));
-        String operation = request.getParameter("operation");
-
         String result = Integer.toString(num1 + num2);
         // Create a JSON response object
       JsonObject jsonResponse = Json.createObjectBuilder()
