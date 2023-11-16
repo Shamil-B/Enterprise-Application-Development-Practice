@@ -17,8 +17,6 @@ public class Operations extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        int num1 = Integer.parseInt(request.getParameter("num1"));
-        int num2 = Integer.parseInt(request.getParameter("num2"));
         String operation = request.getParameter("operation");
         
         if("add".equals(operation)) {
